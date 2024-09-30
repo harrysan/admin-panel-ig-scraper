@@ -1,6 +1,3 @@
-Here’s an example of a `README.md` for your Instagram scraper program with a backend in Python (using Instagrapi and MySQL) and a frontend in Vue.js 3:
-
----
 
 # Instagram Scraper Program
 
@@ -63,29 +60,30 @@ This project is an Instagram Scraper application built with a **Python Flask** b
 ### Backend
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/yourusername/instagram-scraper.git
    cd instagram-scraper/backend
    ```
-
 2. **Set up a virtual environment:**
+
    ```bash
    python3 -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
-
 3. **Install the required Python dependencies:**
+
    ```bash
    pip install -r requirements.txt
    ```
-
 4. **Configure the MySQL database:**
    Update the `config.py` file with your MySQL database credentials:
+
    ```python
    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://username:password@localhost/instagram_scraper'
    ```
-
 5. **Run the Flask app:**
+
    ```bash
    flask run
    ```
@@ -93,16 +91,17 @@ This project is an Instagram Scraper application built with a **Python Flask** b
 ### Frontend
 
 1. **Navigate to the frontend folder:**
+
    ```bash
    cd ../frontend
    ```
-
 2. **Install the necessary packages:**
+
    ```bash
    npm install
    ```
-
 3. **Run the development server:**
+
    ```bash
    npm run serve
    ```
@@ -142,8 +141,9 @@ This project is an Instagram Scraper application built with a **Python Flask** b
 ## Scraping API
 
 - **GET** `/api/scrape/user/<username>`: Scrape a user and their posts, stories, followers, and following, then insert into the database.
-  
+
   Example response:
+
   ```json
   {
     "message": "Scraping and insertion completed successfully",
@@ -159,7 +159,7 @@ This project is an Instagram Scraper application built with a **Python Flask** b
 - **Post Table:** Stores posts made by users, linked to post tags.
 - **Story Table:** Stores Instagram stories, linked to the user.
 - **PostTag Table:** Stores tags related to posts.
-  
+
 ---
 
 ## Running Tests

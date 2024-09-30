@@ -1,0 +1,5 @@
+Note TODO
+-add foreign Key each table
+-separate into each folder
+-add updated at column
+-bulk insert

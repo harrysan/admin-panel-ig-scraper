@@ -1,0 +1,71 @@
+* {
+  font-family: "Open Sans";
+  /* font-style: normal;
+  font-size: 13px; */
+}
+
+/*-----FONT-----*/
+.font-light {
+  font-family: "Open Sans";
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.font-normal {
+  font-family: "Open Sans";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.font-medium {
+  font-family: "Open Sans";
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.font-semibold {
+  font-family: "Open Sans";
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.font-bold {
+  font-family: "Open Sans";
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*-----COLOR-----*/
+/* 
+  Text : FFFFFF 
+  Background : 1A202C
+  Icon : 38B2AC
+  Content : F7FAFC
+  Grey : E9EAEC
+  Grey Strip : 3B414B
+  */
+.background-bold {
+  background-color: #1a202c;
+}
+.background-light {
+  background-color: #f7fafc;
+}
+.background-icon {
+  background-color: #38b2ac;
+}
+.background-white {
+  background-color: #ffffff;
+}
+.text-white {
+  color: #ffffff;
+}
+.text-icon {
+  color: #38b2ac;
+}
+.color-grey {
+  color: #e9eaec;
+}
+.color-grey-dark {
+  color: #3b414b;
+}

@@ -11,3 +11,13 @@ htmlcov/
 docs/_build/
 .env
 app.log
+/static/post_tags/*.jpg
+/static/post_tags/*.mp4
+/static/posts/*.jpg
+/static/posts/*.mp4
+/static/profiles/*.jpg
+/static/profiles/*.mp4
+/static/stories/*.jpg
+/static/stories/*.mp4
+/static/story_mentions/*.jpg
+/static/story_mentions/*.mp4

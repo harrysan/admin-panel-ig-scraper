@@ -1,5 +1,5 @@
-database=""
-userdb=""
-passdb=""
-namauser=""
-password=""
+database="" # database name = ig-scraper
+userdb="" # username for access database
+passdb="" # password for access database
+namauser="" # username instagram
+password="" # password instagram

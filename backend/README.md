@@ -7,7 +7,6 @@ This project is a REST API designed to scrape data from Instagram, focusing on r
 - **User Data**: Retrieve and store Instagram user information including follower and following.
 - **User Posts**: Retrieve and store posts made by users, including post tags.
 - **User Stories**: Retrieve and store stories shared by users, including story mentions.
-- **CRUD Operations**: Perform create, read, update, and delete operations on users, posts, and stories.
 
 ## Table of Contents
 
@@ -47,8 +46,8 @@ To get started with the Instagram Scraper REST API, follow these steps:
    database="ig_scraper"
    userdb="root"
    passdb="123456"
-   namauser="abcd123"
-   password="abc1234"
+   namauser="abcd123" # username instagram
+   password="abc1234" # password instagram
    ```
 5. **Run the database migrations**:
 
@@ -85,22 +84,47 @@ curl -X POST -H "Content-Type: application/json" -d '{"username": "john_doe", "f
 
 ### Users
 
-- **POST /users**: Create a new user
 - **GET /users**: Retrieve all users
 - **GET /users/[int:user_id](int:user_id)**: Retrieve a specific user by ID
 - **GET /users/username/[string:username](string:username)**: Retrieve a specific user by username
-- **PUT /users/[int:user_id](int:user_id)**: Update a user by ID
-- **DELETE /users/[int:user_id](int:user_id)**: Delete a user by ID
 
 ### Posts
 
-- **POST /posts**: Create a new post
+- **GET /posts**: Retrieve all posts
 - **GET /posts/[int:post_id](int:post_id)**: Retrieve a specific post by ID
+- **GET /posts/by_user_pk/[pk]()**: Retrieve all posts by User Pk
+- **GET /post_tags**: Retrieve all post tags
+- **GET /post_tags/[int:post_id](int:post_id)**: Retrieve all post tags by post ID
 
 ### Stories
 
-- **POST /stories**: Create a new story
+- **GET /stories**: Retrieve all stories
 - **GET /stories/[int:story_id](int:story_id)**: Retrieve a specific story by ID
+- **GET /stories/by_user_pk/[pk]()**: Retrieve all stories by User Pk
+- **GET /story_mentions**: Retrieve all story mentions
+- **GET /story_mentions/by_story_id/[int:story_id]()**: Retrieve all story mentions by story ID
+
+### Count
+
+- **GET /api/count_posts**: Count all posts
+- **GET /api/count_users**: Count all users
+- **GET /api/count_stories**: Count all stories
+
+### Image
+
+- **GET /post_img/[path:filename](path:filename)**: Get post image by filename
+- **GET /profile_img/[path:filename](path:filename)**: Get profile image by filename
+- **GET /post_tag_img/[path:filename](path:filename)**: Get post tag image by filename
+- **GET /story_img/[path:filename](path:filename)**: Get story image by filename
+- **GET /story_mention_img/[path:filename](path:filename)**: Get story mention image by filename
+
+### Scraping
+
+- **POST /scrap**: Scraping Instagram Info by Username
+  Body :
+  ```
+  { "username" : "xxxxx" }
+  ```
 
 ## Database Migration
 
@@ -117,7 +141,7 @@ flask db migrate -m "Migration message"
 flask db upgrade
 ```
 
-## Testing
+## Testing (not yet)
 
 To run unit tests, execute the following command:
 

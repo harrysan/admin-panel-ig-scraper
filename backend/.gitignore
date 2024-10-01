@@ -11,8 +11,8 @@ htmlcov/
 docs/_build/
 .env
 app.log
-/static/post_tags/
-/static/posts/
-/static/profiles/
-/static/stories/
-/static/story_mentions/
+# /static/post_tags/
+# /static/posts/
+# /static/profiles/
+# /static/stories/
+# /static/story_mentions/

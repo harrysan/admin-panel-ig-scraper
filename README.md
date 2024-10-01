@@ -86,6 +86,26 @@ Please take a look at backend folder
 ---
 
 
+## Screenshot
+
+![1727790511764](image/README/1727790511764.png "dashboard")
+
+![1727790535158](image/README/1727790535158.png "dashboard-process")
+
+![1727790613102](image/README/1727790613102.png "users page")
+
+![1727790549223](image/README/1727790549223.png "user page menu")
+
+![1727790564156](image/README/1727790564156.png "user page detail")
+
+![1727790578036](image/README/1727790578036.png "user page posts")
+
+![1727790630218](image/README/1727790630218.png "user page story")
+
+![1727790639943](image/README/1727790639943.png "feedback page")
+
+
+---
 
 ## License
 
